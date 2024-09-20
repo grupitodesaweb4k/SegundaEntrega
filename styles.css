@@ -368,6 +368,7 @@ font-family: "Source Sans 3", sans-serif;
     margin: 40px auto;
     border: 2px solid black;
     border-radius: 8px;
+	background-color: white;
 }
 
 .forms {
