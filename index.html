@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">.
+                  <img src="img/lo.png" alt="">
+                  <h1>Farmacia SaludPlus</h1>
+
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a> </li>
+                        <li> <a href="historia.html"><i class="fa-solid fa-book"></i>Historia</a> </li>
+                        <li> <a href="contactanos.html"><i class="fa-solid fa-phone"></i>Contactanos</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+    <section id="presenta">
+      <h1>Nuestras Ubicaciones Cercanas </h1>
+      <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.295187979973!2d-89.20427262417559!3d13.70056328668602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330f25274b6cf%3A0x409a51c125627a99!2sUniversidad%20Tecnol%C3%B3gica%20de%20El%20Salvador!5e0!3m2!1ses-419!2ssv!4v1726267177749!5m2!1ses-419!2ssv" width="1800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> 
+       <div class="select">
+        <h2 for="depa">Por favor elija su departamento para mostrarle las farmacias mas cercanas </h2>
+        <select name="" id="depa">
+          <option value="elsalvador">Todos Los Departamentos</option>
+          <option value="ahuachapán">Ahuachapán</option>
+          <option value="cabañas">Cabañas</option>
+          <option value="chalatenango">Chalatenango</option>
+          <option value="cuscatlán">Cuscatlán</option>
+          <option value="la Libertad">La Libertad</option>
+          <option value="la Paz">La Paz</option>
+          <option value="la Unión">La Unión</option>
+          <option value="morazán">Morazán</option>
+          <option value="san Miguel">San Miguel</option>
+          <option value="san Salvador">San Salvador</option>
+          <option value="san Vicente">San Vicente</option>
+          <option value="santa Ana">Santa Ana</option>
+          <option value="sonsonate">Sonsonate</option>
+          <option value="usulután">Usulután</option>
+        </select>
+       </div>
+
+    </section>
+   
+    
+    <section id="seccionesc">
+      <div class="container">
+        <!-- Primer box -->
+        <div class="box">
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Rosa</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Azul</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Celeste</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+
+        </div>
+      
+        <!-- Segundo box -->
+        <div class="box">
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Verde</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Amarilla</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Azul</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Tercer box -->
+        <div class="box">
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Rosa</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Azul</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <h3>Zona Celeste</h3>
+            </div>
+            <div class="accordion-content">
+              <p>Dirección: Blvd. Del Hipódromo, CC Basilea Local 14.</p>
+              <p>Horarios:</p>
+              <p>Domingo: 09:00 a.m. - 09:30 p.m.</p>
+              <p>Lunes a viernes: 07:45 a.m. - 10:00 p.m.</p>
+              <p>Sábado: 07:45 a.m. - 11:00 p.m.</p>
+              <button>Ubicar</button>
+            </div>
+          </div>
+
+        </div>
+      </div>  
+  </section>
+      
+    <script src="scripts.js"></script>
+</body>
+<section id="contactos">
+    <div class="fila">
+        <div class="col">
+            <h3>Nuestras Redes Sociales</h3>
+            <div class="media">
+                <a href="https://www.facebook.com/profile.php?id=61565642321039" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            </div>
+            <div class="media">
+                <a href="https://www.instagram.com/gsolutions_/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </div>
+            <div class="media">
+                <a href="https://x.com/home" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Contacto</h3>
+            <div class="media">
+                <a href="#"><i class="fa-solid fa-envelope"></i>E-Mail</a>
+            </div>
+            <div class="media">
+                <a href="https://wa.me/+50375176106" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+            </div>
+        </div>
+        <div class="col">
+            <h1>Farmacia SaludPlus</h1>
+            <a class="terminos" href="terminos.html">Terminos y Declaraciones</a>
+        </div>
+    </div>
+    <div class="derechos-reservados">
+        <p>&copy; 2024 Farmacia SaludPlus. Todos los derechos reservados.</p>
+    </div>
+</section>
+
+</html>
